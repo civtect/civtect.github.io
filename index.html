@@ -1,0 +1,550 @@
+
+<!-- Company Website for Civtect India Private Limited -->
+
+
+<!DOCTYPE html>
+<html>
+<title>Civtect</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+#myNavbar{
+
+  height: 53px;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Assets/background.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 15px;
+}
+
+.iconify { width: 150px; height: 70px; }
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.logo {
+    font-size: 200px;
+}
+
+ @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+
+
+ a:link {
+  color: black;
+  text-decoration: none;
+
+}
+
+
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+
+</style>
+
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-light-grey w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="Assets/logo.jpg" alt="Civtect Logo" style="width:35px;height:35px;"> <strong> Civtect India Private Limited </strong></a>
+
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#clients" class="w3-bar-item w3-button"><i class="fa fa-th"></i> CLIENTS</a>
+      <a href="#projects" class="w3-bar-item w3-button"><i class="fa fa-users"></i> PROJECTS </a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#clients" onclick="w3_close()" class="w3-bar-item w3-button">CLIENTS</a>
+  <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small" style="text-shadow: 2px 2px 8px">Building the future.</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Building the future.</span><br>
+    <span class="w3-large"> One project at a time. </span>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+     <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/civtectindia" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook-official fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://in.linkedin.com/company/civtect-india-private-limited" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+         </ul>
+  </div>
+</header>
+
+
+
+<div>
+<div class="container-fluid" id='about'>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Us</h2>
+      <p>It all started in the year 1988 when Civtect India Private Limited was formed. The first project assigned to us was the construction of the LPG Bottling plant of <a href="https://iocl.in" target="_blank">Indian Oil Corporation Limited </a> at Muchipara and there has been no looking back ever since. </p>
+      <p> From then onwards, we have forayed into various types of engineering construction. We are not only an engineering firm but also a consulting agency. Because of our technical expertise, we were entrusted with the renovation and re-building of turnkey projects which were built ages before we came into existence.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-home logo"></span>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo"></span> 
+    </div>
+    <div class="col-sm-8">
+      <h4><strong>MISSION:</strong> To be the harbinger of a new-age of infrastructure development that stands the test of time. </h4> 
+      <p> Over the last three decades, we have become a name to reckon with in the field of engineering and civil construction. A name that has become synonymous with quality, expertise, and diligence.</p> 
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid ">
+  <p class="w3-center w3-large"> Things we specialize in</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-road w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Roads and Highways</p>
+      
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-train w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Railways and Industrial Sheds</p>
+    </div>
+    <div class="w3-quarter">
+     <span class="iconify" data-icon="mdi-bridge" data-inline="false"></span>
+      <p class="w3-large">Bridges and Flyovers</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-building w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large"> Buildings and Oil-Refineries</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Team Section -->
+<div class="container-fluid bg-grey" style="padding:100px 16px" id="team">
+  <h3 class="w3-center">THE A-TEAM</h3>  
+  <div class="w3-row-padding w3-grayscale" style="margin-top:40px">
+  
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Assets/md.png" alt="Barindranath Ganguly" style="display: block; margin-left: auto; margin-right: auto; width: 46%;">
+        <div class="w3-container">
+          <h3>Barindranath Ganguly</h3>
+          <p class="w3-opacity">Managing Director</p>
+          <p>BE, Civil Engineering, Jadavpur University</p>
+          <p><a href="mailto:civtect.director@gmail.com."><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Assets/d2.png" alt="Jane" style="display: block;margin-left: auto; margin-right: auto; width: 50%;">
+        <div class="w3-container">
+          <h3>Biswanath Ganguly</h3>
+          <p class="w3-opacity">Director</p>
+          <p>BE, Civil Engineering, Jalpaiguri Government Engineering College</p>
+          <p><a href="mailto:gangulybiswanath97@@gmail.com."><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Assets/d1.png" alt="Mike" style="display: block; margin-left: auto; margin-right: auto; width: 53%;">
+        <div class="w3-container">
+          <h3>Ashit Ganguly</h3>
+          <p class="w3-opacity">Director</p>
+          <p> Diploma, Civil Engineering, AJC Polytechnic College</p>
+          <p><a href="mailto:civtect.director@gmail.com."><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button> </a></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Assets/d3.png" alt="Dan" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+        <div class="w3-container">
+          <h3>Tapati Ganguly</h3>
+          <p class="w3-opacity">Director</p>
+          <p> MA, Bengali Literature, Jadavpur University</p>
+          <p><a href="mailto:civtect.director@gmail.com."><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">6+</span>
+    <br>States
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">50+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">20+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Employees
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container w3-light-grey" id="clients">
+<section class="jumbotron-fluid text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading"> Our Clients</h1>
+          <p class="lead text-muted">Organizations which have bestowed their trust on us</p>
+        </div>
+ </section>
+
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="http://www.indianrail.gov.in/enquiry/StaticPages/StaticEnquiry.jsp?StaticPage=index.html" target="_blank">
+        <img src="Assets/railway.png" alt="Lights" style="width:66%">
+        <div class="caption">
+          <p><a href="http://www.indianrail.gov.in/enquiry/StaticPages/StaticEnquiry.jsp?StaticPage=index.html" target="_blank"> Indian Railways </a></p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="https://nhai.gov.in/#/" target="_blank">
+        <img src="Assets/nhai.png" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p><a href="https://nhai.gov.in/#/" target="_blank"> National Highways Authority of India </a></p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="http://wbpwd.gov.in" target="_blank">
+        <img src="Assets/pwd.png" alt="Fjords" style="width:66%">
+        <div class="caption">
+          <p><a href="http://wbpwd.gov.in" target="_blank">Public Works Department, West Bengal </a></p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="https://iocl.com" target="_blank">
+        <img src="Assets/iocl.png" alt="Lights" style="width:66%">
+        <div class="caption">
+          <p> <a href="https://iocl.com" target="_blank"> Indian Oil Corporation Limited </a></p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="https://www.bharatpetroleum.com" target="_blank">
+        <img src="Assets/bpcl.jpg" alt="Nature" style="width:79%">
+        <div class="caption">
+          <p> <a href="https://www.bharatpetroleum.com"> Bharat Petroleum Corporation Limited </a></p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="https://nhidcl.com">
+        <img src="Assets/nhidcl.jpg" alt="Fjords" style="width:73%">
+        <div class="caption">
+          <p> <a href= "https://nhidcl.com"> National Highways and Infrastructure Development Corporation Limited </a></p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="Assets/one.jpeg" alt="Chania" style="width: 100%; height: 800px;">
+      <div class="carousel-caption">
+        <h3>Bowstring Bridge</h3>
+        <p>Under construction, Santragachhi Site</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="Assets/two.jpeg" alt="Chicago" style="width: 100%; height:800px;">
+      <div class="carousel-caption">
+        <h3>Bowstring Bridge</h3>
+        <p>50 metre span</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="Assets/three.jpeg" alt="New York" style="width: 100%; height: 800px">
+      <div class="carousel-caption">
+        <h3>Bowstring Bridge</h3>
+        <p> Weighs 580 MT </p>
+      </div>
+    </div>
+  </div>
+
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+</a>
+</div>
+
+
+
+<div class="w3-container w3-light-grey" id="projects">
+  
+  <section class="jumbotron-fluid text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading"> Projects</h1>
+          <p class="lead text-muted">On time completion, technical expertise and delivery within budget</p>
+        </div>
+ </section>
+
+ <div class = 'row'>
+  <div class ='col-md-3'>
+      <ul class="fa-ul mb-0" id = "ul" > 
+             <li>
+             <i class="fas fa-code text-warning"></i>
+              Automata Theory 
+            </li>
+            <li>
+              <i class="fas fa-code text-warning"></i>
+              Computer Security
+           </li>
+            <li>
+              <i class="fas fa-code text-warning"></i>
+              Data Structures with C++</li>
+             <li>
+              <i class="fas fa-code text-warning"></i>
+              Robust Server Software Design </li>
+              <li>
+              <i class="fas fa-code text-warning"></i>
+              Software Engineering Principles </li>
+              <li>
+            <li>
+             <i class = "fas fa-code text-warning"></i>
+             Performance and Parallelism
+            </li>
+              <i class="fas fa-code text-warning"></i>
+              System Software Programming 
+            </li>
+             <li>
+             <i class = "fas fa-code text-warning"></i>
+             Model-Based Data Science
+            </li>
+            <li>
+            <i class = "fas fa-code text-warning"></i>
+             Vector Space and Applications
+            </li>
+            <li>
+      <i class = "fas fa-code text-warning"></i>
+              Probability Theory
+            </li>
+        
+      </ul>
+  </div>
+</div>
+</div>
+
+
+
+
+  
+
+<!-- Contact Section -->
+<div class="w3-container w3-dark-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message.</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> 73/29 Golf Club Road, Kolkata - 33, West Bengal</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: <a href="mailto:civtect@gmail.com.">civtect@gmail.com </a></p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"> </i> Phone : 033-24731166 </p>
+    <p><i class="fa fa-print fa-fw w3-xxlarge w3-margin-right"> </i> Fax : 033-24720133 </a></p>
+
+
+    <br>
+</div>
+</div>
+
+
+<div class="w3-container w3-light-grey" style="padding:1px 1px" id="contact">
+<!-- <iframe width=100% height="620" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=100%&amp;height=620&amp;hl=en&amp;q=73/29%20Golf%20Club%20Road%20Kolkata+(Civtect%20)&amp;t=h&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+</iframe> -->
+<iframe width="1420" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&height=400&hl=en&q=73/29%20Uday%20%20Kolkata+(Civtect)&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe> <a href='https://embedmaps.org/'>embed a google map in website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=9a50fda8307ebef4ecd1d5c8f9416b4d9b48b9b0'></script>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-chevron-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/civtectindia" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook-official fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://in.linkedin.com/company/civtect-india-private-limited" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+         </ul>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+
+
+
+</body>
+</html>
